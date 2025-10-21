@@ -1,89 +1,57 @@
-<div class="min-h-screen bg-gradient-to-br from-blue-100 via-pink-100 to-purple-100 p-6">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl p-10">
-  
-      <!-- Header -->
-      <h1 class="text-4xl font-bold text-center text-gray-800 mb-10">
-        My Profile
-      </h1>
-  
-      <!-- About Me -->
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold text-pink-600 mb-4 flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M5.121 17.804A12.042 12.042 0 0112 15c2.39 0 4.618.756 6.879 2.121M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-          About Me
-        </h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          My name is <span class="font-semibold">Nawin Phromrat</span>, Computer Engineering graduate with a strong
-          passion for Frontend Development. Experienced in building UI with Angular, collaborating via REST APIs, and
-          working in Agile environments. Participated in <span class="font-medium">TESA Top Gun Rally 2024 & 2025</span>,
-          enhancing problem-solving, teamwork, and real-time decision-making skills. Eager to contribute and grow with
-          the organization.
-        </p>
-      </section>
-  
-      <!-- Education -->
-      <section>
-        <h2 class="text-2xl font-semibold text-pink-600 mb-4 flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0 0H5m7 0h7" />
-          </svg>
-          Education
-        </h2>
-  
-        <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Bachelor of Engineering in Computer Engineering
-          </h3>
-          <p class="text-gray-700 mb-1">
-            <span class="font-medium">University:</span> Nakhon Phanom University
-          </p>
-          <p class="text-gray-700 mb-1">
-            <span class="font-medium">Graduated:</span> 2025
-          </p>
-          <p class="text-gray-700">
-            <span class="font-medium">GPA:</span> 3.25
-          </p>
-        </div>
-      </section>
-  
-      <div class="flex justify-center gap-4 mt-4">
-        <a
-          routerLink="/"
-          class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-full shadow-md transition"
-        >
-          Home
-        </a>
-        <a
-          routerLink="/bio"
-          class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-full shadow-md transition"
-        >
-          About Me
-        </a>
-        <a
-          routerLink="/experience"
-          class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-full shadow-md transition"
-        >
-          Experienced
-        </a>
-        <a
-          routerLink="/skills"
-          class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-full shadow-md transition"
-        >
-          Skills
-        </a>
-        <a
-          routerLink="/contact"
-          class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-full shadow-md transition"
-        >
-          Contact Me
-        </a>
-      </div>
+<div class="min-h-screen bg-gradient-to-br from-blue-100 via-pink-100 to-purple-100 p-4 sm:p-6 md:p-8 lg:p-10">
+  <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl p-6 sm:p-8 md:p-10">
+    
+    <!-- Header -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6 sm:mb-10">
+      My Profile
+    </h1>
 
+    <!-- About Me -->
+    <section class="mb-6 sm:mb-10">
+      <h2 class="text-xl sm:text-2xl font-semibold text-pink-600 mb-3 sm:mb-4 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A12.042 12.042 0 0112 15c2.39 0 4.618.756 6.879 2.121M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        About Me
+      </h2>
+      <p class="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
+        My name is <span class="font-semibold">Nawin Phromrat</span>, Computer Engineering graduate with a strong passion for Frontend Development. Experienced in building UI with Angular, collaborating via REST APIs, and working in Agile environments. Participated in <span class="font-medium">TESA Top Gun Rally 2024 & 2025</span>, enhancing problem-solving, teamwork, and real-time decision-making skills. Eager to contribute and grow with the organization.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="text-xl sm:text-2xl font-semibold text-pink-600 mb-3 sm:mb-4 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0 0H5m7 0h7" />
+        </svg>
+        Education
+      </h2>
+
+      <div class="bg-blue-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-2">
+          Bachelor of Engineering in Computer Engineering
+        </h3>
+        <p class="text-gray-700 mb-1 text-sm sm:text-base">
+          <span class="font-medium">University:</span> Nakhon Phanom University
+        </p>
+        <p class="text-gray-700 mb-1 text-sm sm:text-base">
+          <span class="font-medium">Graduated:</span> 2025
+        </p>
+        <p class="text-gray-700 text-sm sm:text-base">
+          <span class="font-medium">GPA:</span> 3.25
+        </p>
+      </div>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-4">
+      <a routerLink="/" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Home</a>
+      <a routerLink="/bio" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">About Me</a>
+      <a routerLink="/experience" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Experienced</a>
+      <a routerLink="/skills" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Skills</a>
+      <a routerLink="/contact" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Contact Me</a>
     </div>
+
   </div>
+</div>
