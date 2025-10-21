@@ -8,5 +8,5 @@ import { RouterLink } from "@angular/router";
   styleUrl: './contact.css'
 })
 export class Contact {
-
+  
 }
