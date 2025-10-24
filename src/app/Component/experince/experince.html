@@ -1,52 +1,74 @@
-<div class="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-4 sm:p-6 md:p-8 lg:p-10">
+<div
+  class="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-4 sm:p-6 md:p-8 lg:p-10"
+>
   <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-2xl p-6 sm:p-8 md:p-10">
+    <!-- Language Switch -->
+    <div class="absolute top-4 right-4 flex items-center gap-2">
+      <span class="text-gray-600 font-medium">EN</span>
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input
+          type="checkbox"
+          value=""
+          class="sr-only peer"
+          [checked]="isThai"
+          (change)="toggleLanguage()"
+        />
+        <div
+          class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-pink-500 peer-focus:ring-2 peer-focus:ring-pink-300 transition-all"
+        ></div>
+        <div
+          class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow-md peer-checked:translate-x-5 transition-transform"
+        ></div>
+      </label>
+      <span class="text-gray-600 font-medium">TH</span>
+    </div>
 
     <!-- Header -->
     <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6 sm:mb-8">
-      Experience & Projects
+      {{ text.projects }}
     </h1>
 
     <!-- Work Experience -->
     <section class="mb-8 sm:mb-12">
       <h2 class="text-xl sm:text-2xl font-semibold text-pink-600 mb-3 sm:mb-4">
-        Professional Experience
+        {{ text.professionalExperience }}
       </h2>
 
       <!-- Khok Sung Organization -->
       <div class="mb-4 sm:mb-6 border-l-4 border-pink-500 pl-3 sm:pl-4">
         <h3 class="text-lg sm:text-xl font-bold text-gray-800">
-          Khok Sung Subdistrict Administrative Organization
+          {{ text.khoksung }}
         </h3>
         <p class="text-gray-600 font-medium text-sm sm:text-base">
-          Administrative Officer (Legal & Case Support)
+          {{ text.position }}
         </p>
         <ul class="list-disc list-inside text-gray-600 mt-1 sm:mt-2 space-y-1 text-sm sm:text-base">
-          <li>Worked with the wider development team</li>
-          <li>Managed website design, content, and SEO</li>
-          <li>Handled marketing, branding, and logo design</li>
+          <li>{{ text.duty1 }}</li>
+          <li>{{ text.duty2 }}</li>
+          <li>{{ text.duty3 }}</li>
         </ul>
       </div>
 
       <!-- Extreme Software -->
       <div class="border-l-4 border-blue-500 pl-3 sm:pl-4">
         <h3 class="text-lg sm:text-xl font-bold text-gray-800">
-          Extreme Software and Consulting Ltd., Partnership
+          {{ text.extreme }}
         </h3>
         <p class="text-gray-600 font-medium text-sm sm:text-base">
-          Frontend Developer (March 2024 – October 2024)
+          {{ text.positionExtreme }}
         </p>
         <ul class="list-disc list-inside text-gray-600 mt-1 sm:mt-2 space-y-1 text-sm sm:text-base">
           <li>
-            Designed and implemented responsive user interfaces (UI/UX) with Angular, improving usability and reducing repetitive tasks by 25%.
+            {{ text.dutyExtreme1 }}
           </li>
           <li>
-            Collaborated with backend team to integrate REST APIs, enhancing data loading speed by 30%.
+            {{ text.dutyExtreme2 }}
           </li>
           <li>
-            Utilized GitLab for version control and Postman for API testing, improving development and testing efficiency.
+            {{ text.dutyExtreme3 }}
           </li>
           <li>
-            Worked under Agile methodology with sprint planning and daily stand-ups to deliver features on time.
+            {{ text.dutyExtreme4 }}
           </li>
         </ul>
       </div>
@@ -54,46 +76,77 @@
 
     <!-- Projects -->
     <section class="mb-8 sm:mb-12">
-      <h2 class="text-xl sm:text-2xl font-semibold text-pink-600 mb-3 sm:mb-4">Projects</h2>
+      <h2 class="text-xl sm:text-2xl font-semibold text-pink-600 mb-3 sm:mb-4">
+        {{ text.project }}
+      </h2>
 
       <div class="border-l-4 border-green-500 pl-3 sm:pl-4">
         <h3 class="text-lg sm:text-xl font-bold text-gray-800">
-          Online Request Approval System with Priority Queue Algorithm
+          {{ text.oras }}
         </h3>
         <ul class="list-disc list-inside text-gray-600 mt-1 sm:mt-2 space-y-1 text-sm sm:text-base">
-          <li>Developed a web application using Angular (Frontend) and Laravel (Backend).</li>
-          <li>Implemented a Priority Queue Algorithm for efficient and fair request handling.</li>
-          <li>Built a real-time chat system with Pusher to connect students with staff and instructors.</li>
+          <li>{{ text.dutyOras1 }}</li>
+          <li>{{ text.dutyOras2 }}</li>
+          <li>{{ text.dutyOras3 }}</li>
         </ul>
       </div>
     </section>
 
     <!-- Activities & Achievements -->
     <section class="mb-6 sm:mb-12">
-      <h2 class="text-xl sm:text-2xl font-semibold text-pink-600 mb-3 sm:mb-4">Activities & Achievements</h2>
+      <h2 class="text-xl sm:text-2xl font-semibold text-pink-600 mb-3 sm:mb-4">
+        {{ text.activities }}
+      </h2>
 
       <div class="border-l-4 border-yellow-500 pl-3 sm:pl-4">
         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1 sm:mb-2">
-          TESA Top Gun Rally 2024 & 2025
+          {{ text.tesa }}
         </h3>
         <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm sm:text-base">
-          <li>Developed solutions in Embedded Systems and IoT under time-constrained competition.</li>
-          <li>Gained experience in team collaboration, real-time problem solving, analytical thinking, and technical presentation to industry experts and judges.</li>
+          <li>
+           {{ text.dutyTesa1 }}
+          </li>
+          <li>
+            {{ text.dutyTesa2 }}
+          </li>
         </ul>
       </div>
     </section>
 
     <!-- Navigation Buttons -->
-    <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-4">
-      <a routerLink="/" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Home</a>
-      <a routerLink="/bio" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">About Me</a>
-      <a routerLink="/experience" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Experienced</a>
-      <a routerLink="/skills" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Skills</a>
-      <a routerLink="/contact" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Contact Me</a>
-      <a href="/assets/resume.pdf" download class="bg-green-500 hover:bg-green-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">
-        Download CV
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-6">
+      <a
+        routerLink="/"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.home }}</a
+      >
+      <a
+        routerLink="/bio"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.bio }}</a
+      >
+      <a
+        routerLink="/experience"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.experience }}</a
+      >
+      <a
+        routerLink="/skills"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.skills }}</a
+      >
+      <a
+        routerLink="/contact"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.contact }}</a
+      >
+      <a
+        href="/assets/resume.pdf"
+        download
+        class="bg-green-500 hover:bg-green-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+      >
+        {{ text.buttons.download }}
       </a>
     </div>
-
   </div>
 </div>

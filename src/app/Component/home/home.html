@@ -1,36 +1,70 @@
-<div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-pink-100 to-purple-100 p-4 sm:p-6 md:p-8 lg:p-10">
-  <div class="bg-white shadow-2xl rounded-2xl p-6 sm:p-8 md:p-10 max-w-3xl sm:max-w-4xl text-center">
+<div
+  class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-pink-100 to-purple-100 p-4 sm:p-6 md:p-8 lg:p-10"
+>
+  <div
+    class="bg-white shadow-2xl rounded-2xl p-6 sm:p-8 md:p-10 max-w-3xl sm:max-w-4xl text-center"
+  >
+    <!-- Language Switch Toggle -->
+    <div class="absolute top-4 right-4 flex items-center gap-2">
+      <span class="text-gray-600 font-medium">EN</span>
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" class="sr-only peer" (change)="toggleLanguage()" />
+        <div
+          class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-pink-500 peer-focus:ring-2 peer-focus:ring-pink-300 transition-all"
+        ></div>
+        <div
+          class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow-md peer-checked:translate-x-5 transition-transform"
+        ></div>
+      </label>
+      <span class="text-gray-600 font-medium">TH</span>
+    </div>
 
     <img
-      src='/assets/photo.png'
+      src="/assets/photo.png"
       alt="Profile"
       class="w-28 h-28 sm:w-36 sm:h-36 rounded-full mx-auto mb-4 sm:mb-6 shadow-lg border-4 border-blue-300"
     />
 
     <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-2">
-      Hi, I'm Nawin 👋
+      {{ text.greeting }}
     </h1>
 
     <h2 class="text-base sm:text-lg md:text-xl text-pink-600 font-medium mb-4">
-      Frontend Developer | Computer Engineering Graduate
+      {{ text.title }}
     </h2>
 
     <p class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed text-justify mb-6">
-      Computer Engineering graduate with a strong passion for Frontend Development. 
-      Experienced in building UI with Angular, collaborating via REST APIs, and working 
-      in Agile environments. Participated in TESA Top Gun Rally 2024 & 2025, enhancing 
-      problem-solving, teamwork, and real-time decision-making skills. Eager to contribute 
-      and grow with the organization.
+      {{ text.description }}
     </p>
 
     <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-4">
-      <a routerLink="/bio" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">About Me</a>
-      <a routerLink="/experience" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Experienced</a>
-      <a routerLink="/skills" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Skills</a>
-      <a routerLink="/contact" class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">Contact Me</a>
+      <a
+        routerLink="/bio"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.bio }}</a
+      >
+      <a
+        routerLink="/experience"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.experience }}</a
+      >
+      <a
+        routerLink="/skills"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.skills }}</a
+      >
+      <a
+        routerLink="/contact"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+        >{{ text.buttons.contact }}</a
+      >
       <!-- Download CV Button -->
-      <a href="/assets/resume.pdf" download class="bg-green-500 hover:bg-green-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base">
-        Download CV
+      <a
+        href="/assets/resume.pdf"
+        download
+        class="bg-green-500 hover:bg-green-600 text-white px-3 sm:px-5 py-2 rounded-full shadow-md transition text-sm sm:text-base"
+      >
+        {{ text.buttons.download }}
       </a>
     </div>
   </div>
