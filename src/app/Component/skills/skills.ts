@@ -21,16 +21,7 @@ export class Skills {
     'Java',
   ];
 
-  softSkills: string[] = [
-    'Effective Communication',
-    'Team Collaboration',
-    'Problem-Solving',
-    'Time Management',
-    'Adaptability',
-    'Critical Thinking',
-    'Leadership',
-    'Attention to Detail',
-  ];
+  softSkillsList: string[] = [];
 
   frameworks: string[] = ['Angular', 'React', 'Vue.js', 'jQuery', 'Node.js', 'Spring Boot'];
 
@@ -56,11 +47,13 @@ export class Skills {
     // โหลดค่าครั้งแรก
     this.text = this.languageService.getText();
     this.isThai = this.languageService.currentLanguage === 'TH';
+    this.softSkillsList = Object.values(this.text.softskillList);
 
     // subscribe เพื่ออัปเดตเมื่อเปลี่ยนภาษา
     this.languageService.isThai$.subscribe((value) => {
       this.isThai = value;
       this.text = this.languageService.getText();
+      this.softSkillsList = Object.values(this.text.softskillList);
     });
   }
 

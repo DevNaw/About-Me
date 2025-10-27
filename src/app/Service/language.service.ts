@@ -21,14 +21,8 @@ export interface AppText {
   university: string;
   graduated: string;
   gpa: string;
-
   projects: string;
   professionalExperience: string;
-  khoksung: string;
-  position: string;
-  duty1: string;
-  duty2: string;
-  duty3: string;
   extreme: string;
   positionExtreme: string;
   dutyExtreme1: string;
@@ -99,11 +93,6 @@ export class LanguageService {
     gpa: 'GPA: 3.25',
     projects: 'Experience & Projects',
     professionalExperience: 'Professional Experience',
-    khoksung: 'Khok Sung Subdistrict Administrative Organization',
-    position: 'Administative Officer (Legal & Case Subpport)',
-    duty1: 'Worked with the wider development team.',
-    duty2: 'Managed website design, content, and SEO.',
-    duty3: 'Handled marketing, branding, and logo design.',
     extreme: 'Extreme Software and Cinsulting Ltd., Partnership',
     positionExtreme: 'Frontend Developer (March 2024 - October 2024)',
     dutyExtreme1: 'Designed and implemented responsive user interfaces (UI/UX) with Angular, improving usability and reducing repetitive tasks by 25%.',
@@ -162,16 +151,11 @@ export class LanguageService {
     dataMe: 'ผมชื่อ นาวิน พรหมรัตน์ จบการศึกษาสาขา วิศวกรรมคอมพิวเตอร์ มีความสนใจอย่างมากในด้าน Frontend Development มีประสบการณ์ในการ สร้าง UI แบบไดนามิกด้วย Angular, ทำงานร่วมกับ REST APIs, และทำงานได้อย่างมีประสิทธิภาพใน Agile Environment เข้าร่วมกิจกรรม TESA Top Gun Rally 2024 & 2025 ซึ่งช่วยพัฒนาทักษะ การแก้ปัญหา การทำงานเป็นทีม และการตัดสินใจแบบเรียลไทม์ พร้อมที่จะนำทักษะเหล่านี้มามีส่วนร่วมและเติบโตไปพร้อมกับองค์กร',
     education: 'การศึกษา',
     bachelor: 'คณะวิศวกรรมศาสตร์ สาขาวิศวกรรมคอมพิวเตอร์',
-    university: 'มหาวิทยาลัย: มหาวิทยาลัยนครพนม',
+    university: 'มหาวิทยาลัยนครพนม',
     graduated: 'สำเร็จการศึกษา: 2025',
-    gpa: 'GPA: 3.25',
+    gpa: 'เกรดเฉลี่ย: 3.25',
     projects: 'ประสบการณ์การทำงานและโปรเจกต์',
     professionalExperience: 'ประสบการณ์การทำงาน',
-    khoksung: 'องค์การบริหารส่วนตำบลโคกสูง',
-    position: 'เจ้าหน้าที่ธุรการ (ฝ่ายกฎหมายและสนับสนุนคดี)',
-    duty1: 'ร่วมงานกับ ทีมพัฒนาขนาดใหญ่/ทีมพัฒนาโดยรวม',
-    duty2: 'บริหารจัดการ การออกแบบเว็บไซต์ เนื้อหา และ SEO',
-    duty3: 'ดูแลด้าน การตลาด การสร้างแบรนด์ และการออกแบบโลโก้',
     extreme: 'หจก. เอ็กซ์ตรีม ซอฟต์แวร์ แอนด์ คอนซัลติ้ง',
     positionExtreme: 'Frontend Developer (มีนาคม 2024 – ตุลาคม 2024)',
     dutyExtreme1: 'ออกแบบและพัฒนา อินเทอร์เฟซผู้ใช้ (UI/UX) แบบตอบสนอง ด้วย Angular ช่วยเพิ่มความสะดวกในการใช้งานและลดงานซ้ำซ้อนลง 25%',
